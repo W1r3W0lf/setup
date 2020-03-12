@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 " Files
 Plug 'scrooloose/nerdtree'
 
+Plug 'majutsushi/tagbar'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -115,6 +117,8 @@ nmap z : NERDTreeToggle<cr>
 
 map <F1> <nop>
 imap <F1> <nop>
+
+map <F2> :TagbarToggle<CR>
 
 nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
